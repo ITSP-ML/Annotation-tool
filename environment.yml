@@ -1,0 +1,23 @@
+name: Chat response suggestions
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - jupyterlab==3.4.5
+  - pandas==1.4.4
+  - regex==2022.8.17
+  - scikit-learn==1.1.2
+  - scipy==1.9.1
+  - seaborn==0.11.2
+  - matplotlib==3.5.2
+  - make=4.3
+  - openpyxl==3.0.9
+  - python-dotenv==0.21.0
+  - pyodbc==4.0.34
+  - pip==22.2.2
+  - requests==2.27.1
+  - pip:
+    - -e .  # make the project editable package, conda >= 4.4 only
+    - --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org # to avoid problems with proxies
+
