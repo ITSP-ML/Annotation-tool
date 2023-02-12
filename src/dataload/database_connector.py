@@ -1,7 +1,6 @@
 import attr
 import pyodbc
 from dotenv import dotenv_values
-import mariadb
 
 @attr.s
 class DataBaseConnector:
@@ -32,13 +31,3 @@ if __name__ == "__main__":
     connector = MicrosoftSQLDBConnector(dotenvPrefix="ITDWH")
     print(connector.connect())
 
-
-class MariaDBConnector(DataBaseConnector):
-    def connect(self):
-        return mariadb.connect(
-            user=self.user,
-            password=self.password,
-            host=self.host,
-            port=int(self.port),
-            database=self.database,
-        )
