@@ -97,6 +97,7 @@ sw.*
 
 # data excluded from source control
 data_dump/
+data/
 models/
 
 # never commit notebooks - convert them to .py first
