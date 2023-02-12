@@ -2,9 +2,11 @@
 Annotation tool for any NLP project
 
 # run the front end:
-npm run dev 
+cd src/
+npm run dev
 
 # run backend
+$ cd src/backend/
 python manage.py runserver
 
 # run celery for upload and export of files
